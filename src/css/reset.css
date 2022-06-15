@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+section,
+header,
+body,
+main,
+div,
+button,
+table,
+thead,
+tbody,
+tr,
+th,
+td,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+nav,
+ul,
+li,
+a,
+p {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
