@@ -12,7 +12,6 @@ import rulesApi from "./api/demo/rules.styleguide.api"
 import Styleguide from './pages/Styleguide'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
