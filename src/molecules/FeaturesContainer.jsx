@@ -9,7 +9,7 @@ function FeaturesContainer(props) {
                 <Topic title={props.spaces.title} />
                 <Spacing spaces={props.spaces.data} />
                 <Topic title={props.radius.title} />
-                <Radius radius={props.radius.data}/>
+                <Radius radius={props.radius.data} property={props.radius.property}/>
             </div>
         </section>
     )

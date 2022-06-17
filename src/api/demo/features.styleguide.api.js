@@ -19,16 +19,16 @@ export default {
                 pixels: "16"
             },
             {
+                rem: "1.25",
+                pixels: "20"
+            },
+            {
                 rem: "1.5",
                 pixels: "24"
             },
             {
                 rem: "2",
                 pixels: "32"
-            },
-            {
-                rem: "3",
-                pixels: "48"
             },
             {
                 rem: "4",
@@ -49,19 +49,23 @@ export default {
         property: "borderRadius",
         data: [
             {
-                label: "4px",
+                label: "extraSmall",
                 unit: "4px"
             },
             {
-                label: "8px",
+                label: "small",
                 unit: "8px"
             },
             {
-                label: "12px",
+                label: "regular",
                 unit: "12px"
             },
             {
-                label: "16px",
+                label: "normal",
+                unit: "16px"
+            },
+            {
+                label: "lightLarge",
                 unit: "16px"
             },
             {
