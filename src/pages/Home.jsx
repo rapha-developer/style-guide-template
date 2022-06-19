@@ -16,6 +16,9 @@ function Home() {
             />
             <Header title={informationToHome.header__title} />
             <Link to="/styleguide">Styleguide Link</Link>
+            <br />
+            <br />
+            <Link to="/orion">Orion Styleguide Link</Link>
         </div>
     )
 }

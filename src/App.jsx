@@ -13,6 +13,7 @@ import rulesApi from "./api/demo/rules.styleguide.api"
 
 import Home from "./pages/Home"
 import PageOne from './pages/PageOne';
+import Orion from './pages/Orion'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/orion' element={<Orion />} />
         <Route path='/styleguide' element={<PageOne />} />
       </Routes>
 
