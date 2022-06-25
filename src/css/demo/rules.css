@@ -1,0 +1,15 @@
+.rules-1 {
+    --fc__rule: Heading 1;
+    --ff__rule: Montserrat;
+    --fs__rule: 48px;
+    --fw__rule: 500;
+    --letter__rule: 0.1px;
+}
+
+.rules-2 {
+    --fc__rule: Heading 2;
+    --ff__rule: Montserrat;
+    --fs__rule: 36px;
+    --fw__rule: 700;
+    --letter__rule: 0.2px;
+}
