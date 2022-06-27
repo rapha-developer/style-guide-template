@@ -6,13 +6,15 @@ import featuresApi from "../api/demo/features.styleguide.api"
 import rulesApi from "../api/demo/rules.styleguide.api"
 
 import Styleguide from '../pages/Styleguide'
+
 import rulesCSS from '../css/demo/rules.css'
+import paletteCSS from '../css/demo/palette.css'
 
 function PageOne() {
     return (
         <Styleguide preface={prefaceApi} 
             headers={headersApi} 
-            palettes={palettesApi}
+            palettes={paletteCSS}
             typography={typographyApi}
             features={featuresApi}
             rules={rulesCSS}

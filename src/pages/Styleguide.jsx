@@ -6,7 +6,6 @@ import TypographyContainer from "../molecules/TypographyContainer"
 import RulesContainer from "../molecules/RulesContainer"
 
 import '../css/fonts/demo.fonts.css'
-import rulesCSS from '../css/demo/rules.css'
 
 function Styleguide(props) {
     return (
@@ -16,7 +15,7 @@ function Styleguide(props) {
                 title={props.preface.title}
             />
             {props.headers.color && <Header title={props.headers.color} /> }
-            <PaletteContainer palettes={props.palettes} />
+            <PaletteContainer styleguide={props.palettes} />
 
             {props.headers.typography && <Header title={props.headers.typography} /> }
             <TypographyContainer 
@@ -26,8 +25,7 @@ function Styleguide(props) {
             />
             <RulesContainer styleguide={props.rules}
                             weights={props.typography.weights.data}
-                            component="accordion"
-                            headlineText="typography rules"
+                            headlineText={props.headers.headlines.rules}
             />
             {props.headers.spacing && <Header title={props.headers.spacing} /> }
             <FeaturesContainer 

@@ -1,10 +1,14 @@
 import { useState } from 'react'
 import FormattingDataToAccordions from '../Utils/FormattingDataToAccordions';
+import FormattingDataToPalettes from '../Utils/FormattingDataToPalettes';
 
 function ExtractClassAndPropertiesFromCSS(props) {
     const styleguide = props.styleguide
     const componentTYPE = props.component
-
+    const componentsModel = {
+        accordion: "accordion",
+        palette: "palette"
+    }
     const REGEX_EXPRESSION = /(?:(rules-[^{]+)\s{\s\n|\n).{2,4}--([a-zA-Z_]{1,}):\s([^;]+);/g;
     const resultsAfterRegex = [...styleguide.matchAll(REGEX_EXPRESSION)];
 
@@ -38,11 +42,20 @@ function ExtractClassAndPropertiesFromCSS(props) {
         }
     }
     const [rulesCompleted, setRulesCompleted] = useState(rulesToFormat)
+    const isComponentAccordion = (componentTYPE === componentsModel.accordion) ? true : false;
+    const isComponentPalette = (componentTYPE === componentsModel.palette) ? true : false;
+
     return (
-        <FormattingDataToAccordions 
-            rules={rulesCompleted}
-            weights={props.weights}
-        />
+        <div>
+            {isComponentAccordion && <FormattingDataToAccordions 
+                                        rules={rulesCompleted}
+                                        weights={props.weights}  />
+            }
+            {isComponentPalette && <FormattingDataToPalettes 
+                                        rules={rulesCompleted}  /> 
+            }
+        </div>
+        
     );
 }
 export default ExtractClassAndPropertiesFromCSS

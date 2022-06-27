@@ -7,6 +7,8 @@ import featuresApi from '../api/demo/features.styleguide.api'
 import rulesApi from '../api/demo/rules.styleguide.api'
 
 import rulesCSS from '../css/demo/rules.css'
+import paletteCSS from '../css/demo/palette.css'
+
 import Styleguide from './Styleguide'
 
 function Orion() {
@@ -14,11 +16,10 @@ function Orion() {
         <Styleguide
             preface={prefaceApi}
             headers={headersApi}
-            palettes={palettesApi}
+            palettes={paletteCSS}
             typography={typographyApi}
             features={featuresApi}
             rules={rulesCSS}
-
         />
     )
 }
