@@ -2,5 +2,8 @@ export default {
     color: "colors",
     typography: "typography",
     spacing: "Spacing, Border...",
-    component: "components"
+    component: "components",
+    headlines: {
+        rules: "typography rules"
+    },
 }
