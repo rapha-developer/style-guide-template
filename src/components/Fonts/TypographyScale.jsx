@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import Topic from "../Topic";
 
 function TypographyScale(props) {
-    const tabProperty = props.tabs.property;
-    const tabs = props.tabs.data;
+    const tabs = props.tabs;
     const [tabItems, setTabItems] = useState(generateTabItems());
-
+    
     function generateTabItems() {
         const firstItem = 0;
         const dataToMakeTabs = tabs.map((tabItem, key) => {
@@ -40,13 +39,10 @@ function TypographyScale(props) {
         )
     });
     const contentFromTabs = tabItems.map((tabItem, key) => {
-        const styles = {}
-        styles[tabProperty] = tabItem.value;
-        const propertyDesc = `${tabProperty}: ${tabItem.value}`;
         return (
             <div className="verticalTab__item" data-visible={tabItem.visible} key={key}>
-                <h3 className="verticalTab__title" style={styles}>{tabItem.name}</h3>
-                <p className="verticalTab__description">{propertyDesc} <span>{tabItem.variable}</span></p>
+                <h3 className="verticalTab__title" style={tabItem.styles}>{tabItem.name}</h3>
+                <p className="verticalTab__description">{tabItem.description} <span>{tabItem.variable}</span></p>
             </div>
         );
     });

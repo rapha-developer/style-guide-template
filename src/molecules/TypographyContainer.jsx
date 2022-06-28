@@ -1,13 +1,21 @@
-import FontFamilies from "../components/Fonts/FontFamilies"
-import TypographyScale from "../components/Fonts/TypographyScale"
+import ExtractClassAndPropertiesFromCSS from "../components/Helpers/ExtractClassAndPropertiesFromCSS"
 import WeightsTimeline from "../components/Fonts/WeightsTimeline"
 
 function TypographyContainer(props) {
+    const componentTypeScaleController = "typeScale"
+    const componentFontsController = "fonts"
+
     return (
         <section className="section__typography">
             <div className="container">
-                <FontFamilies fonts={props.fonts}/>
-                <TypographyScale tabs={props.typographyScales} />
+                <ExtractClassAndPropertiesFromCSS 
+                    styleguide={props.styleguideFonts}
+                    component={componentFontsController}
+                />
+                <ExtractClassAndPropertiesFromCSS
+                    styleguide={props.styleguideTypeScale}
+                    component={componentTypeScaleController}
+                />
                 <WeightsTimeline timeline={props.weights} />
             </div>
         </section>

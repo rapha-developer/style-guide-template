@@ -4,6 +4,7 @@ import FeaturesContainer from "../molecules/FeaturesContainer"
 import PaletteContainer from "../molecules/PaletteContainer"
 import TypographyContainer from "../molecules/TypographyContainer"
 import RulesContainer from "../molecules/RulesContainer"
+import weights from '../api/demo/weights.styleguide.api'
 
 import '../css/fonts/demo.fonts.css'
 
@@ -14,19 +15,21 @@ function Styleguide(props) {
                 subtitle={props.preface.subtitle}  
                 title={props.preface.title}
             />
+            
             {props.headers.color && <Header title={props.headers.color} /> }
             <PaletteContainer styleguide={props.palettes} />
 
             {props.headers.typography && <Header title={props.headers.typography} /> }
             <TypographyContainer 
-                fonts={props.typography.fontFamilies}
-                typographyScales={props.typography.fontSizes}
-                weights={props.typography.weights}
+                styleguideFonts={props.fonts}
+                styleguideTypeScale={props.typeScale}
+                weights={weights}
             />
             <RulesContainer styleguide={props.rules}
-                            weights={props.typography.weights.data}
+                            weights={weights.data}
                             headlineText={props.headers.headlines.rules}
             />
+
             {props.headers.spacing && <Header title={props.headers.spacing} /> }
             <FeaturesContainer 
                 spaces={props.features.spacing}

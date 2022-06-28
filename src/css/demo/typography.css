@@ -1,0 +1,31 @@
+
+.rules-1 {
+    --fc__rule: Heading One;
+    --fs__rule: 5rem;
+    --var__rule: --scale--h1;
+}
+.rules-2 {
+    --fc__rule: Heading Two;
+    --fs__rule: 4rem;
+    --var__rule: --scale--h2;
+}
+.rules-3 {
+    --fc__rule: Heading Three;
+    --fs__rule: 3rem;
+    --var__rule: --scale--h3;
+}
+.rules-4 {
+    --fc__rule: Heading Four;
+    --fs__rule: 2.5rem;
+    --var__rule: --scale--h4;
+}
+.rules-5 {
+    --fc__rule: Heading Five;
+    --fs__rule: 2rem;
+    --var__rule: --scale--h5;
+}
+.rules-6 {
+    --fc__rule: Heading Six;
+    --fs__rule: 1.5rem;
+    --var__rule: --scale--h6;
+}
