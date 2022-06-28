@@ -154,7 +154,7 @@ body {
     font-weight: var(--fw__semiBold);
     letter-spacing: var(--letter--small);
     position: relative;
-    color: var(--clr__primary--100); /* #1A1A40 */
+    color: hsl(var(--clr__primary--100)); /* #1A1A40 */
 }
 
 .topic__title::before {
