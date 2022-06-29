@@ -10,6 +10,8 @@ import rulesCSS from '../css/demo/rules.css'
 import paletteCSS from '../css/demo/palette.css'
 import typographyCSS from '../css/demo/typography.css'
 import fontsCSS from '../css/demo/fonts.css'
+import spacingCSS from '../css/demo/spacing.css'
+import radiusCSS from '../css/demo/radius.css'
 
 import Styleguide from './Styleguide'
 
@@ -22,6 +24,8 @@ function Orion() {
             fonts={fontsCSS}
             typeScale={typographyCSS}
             rules={rulesCSS}
+            spacing={spacingCSS}
+            radius={radiusCSS}
             features={featuresApi}
         />
     )

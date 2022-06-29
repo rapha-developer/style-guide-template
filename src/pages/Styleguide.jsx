@@ -8,6 +8,7 @@ import weights from '../api/demo/weights.styleguide.api'
 
 import '../css/fonts/demo.fonts.css'
 
+
 function Styleguide(props) {
     return (
         <div className="styleguide">
@@ -31,9 +32,14 @@ function Styleguide(props) {
             />
 
             {props.headers.spacing && <Header title={props.headers.spacing} /> }
-            <FeaturesContainer 
+            {/* <FeaturesContainer 
                 spaces={props.features.spacing}
                 radius={props.features.borderRadius}
+            /> */}
+            <FeaturesContainer 
+                topics={props.headers.featuresTopics}
+                styleguideSpaces={props.spacing}
+                styleguideRadius={props.radius}
             />
             {props.headers.component && <Header title={props.headers.component} /> }
 

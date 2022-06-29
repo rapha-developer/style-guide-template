@@ -1,15 +1,23 @@
-import Radius from "../components/Features/Radius"
-import Spacing from "../components/Features/Spacing"
+import ExtractClassAndPropertiesFromCSS from "../components/Helpers/ExtractClassAndPropertiesFromCSS"
 import Topic from "../components/Topic"
 
 function FeaturesContainer(props) {
+    const spacingController = "spacing"
+    const radiusController = "radius"
+    const topics = props.topics
     return (
         <section className="section__spacing">
             <div className="container">
-                <Topic title={props.spaces.title} />
-                <Spacing spaces={props.spaces.data} />
-                <Topic title={props.radius.title} />
-                <Radius radius={props.radius.data} property={props.radius.property}/>
+                <Topic title={topics.spacing} />
+                <ExtractClassAndPropertiesFromCSS 
+                    styleguide={props.styleguideSpaces}
+                    component={spacingController}
+                />
+                <Topic title={topics.radius} />
+                <ExtractClassAndPropertiesFromCSS 
+                    styleguide={props.styleguideRadius}
+                    component={radiusController}
+                />
             </div>
         </section>
     )

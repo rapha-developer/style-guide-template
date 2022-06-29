@@ -3,6 +3,8 @@ import FormattingDataToAccordions from '../Utils/FormattingDataToAccordions';
 import FormattingDataToPalettes from '../Utils/FormattingDataToPalettes';
 import FormattingDataToTypeScale from '../Utils/FormattingDataToTypeScale';
 import FormattingDataToFonts from '../Utils/FormattingDataToFonts';
+import FormattingDataToSpacing from '../Utils/FormattingDataToSpacing';
+import FormattingDataToRadius from '../Utils/FormattingDataToRadius';
 
 function ExtractClassAndPropertiesFromCSS(props) {
     const styleguide = props.styleguide
@@ -11,7 +13,9 @@ function ExtractClassAndPropertiesFromCSS(props) {
         accordion: "accordion",
         palette: "palette",
         typeScale: "typeScale",
-        fonts: "fonts"
+        fonts: "fonts",
+        spacing: "spacing",
+        radius: "radius"
     }
     const REGEX_EXPRESSION = /(?:(rules-[^{]+)\s{\s\n|\n).{2,4}--([a-zA-Z_]{1,}):\s([^;]+);/g;
     const resultsAfterRegex = [...styleguide.matchAll(REGEX_EXPRESSION)];
@@ -50,20 +54,23 @@ function ExtractClassAndPropertiesFromCSS(props) {
     const isComponentPalette = (componentTYPE === componentsModel.palette) ? true : false;
     const isComponentTypeScale = (componentTYPE === componentsModel.typeScale) ? true : false;
     const isComponentFonts = (componentTYPE === componentsModel.fonts) ? true : false;
+    const isComponentSpacing = (componentTYPE === componentsModel.spacing) ? true : false;
+    const isComponentRadius = (componentTYPE === componentsModel.radius) ? true : false;
 
     return (
         <div>
             {isComponentAccordion && <FormattingDataToAccordions 
                                         rules={rulesCompleted}
-                                        weights={props.weights} />
-            }
+                                        weights={props.weights} />}
             {isComponentPalette && <FormattingDataToPalettes 
-                                        rules={rulesCompleted}  /> 
-            }
+                                        rules={rulesCompleted}  />}
             {isComponentTypeScale && <FormattingDataToTypeScale 
-                                        rules={rulesCompleted}  /> 
-            }
+                                        rules={rulesCompleted}  />}
             {isComponentFonts && <FormattingDataToFonts 
+                                        rules={rulesCompleted}  />}
+            {isComponentSpacing && <FormattingDataToSpacing
+                                        rules={rulesCompleted}  />}
+            {isComponentRadius && <FormattingDataToRadius
                                         rules={rulesCompleted}  />}
         </div>
         

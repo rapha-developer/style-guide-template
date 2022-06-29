@@ -1,21 +1,19 @@
+import RadiusItem from "./RadiusItem";
 
 function Radius(props) {
-    const property = props.property
-    const radius = props.radius;
-    const radiusItems = radius.map((radiusItem, key) => {
-        const styles = {}
-        styles[property] = radiusItem.unit
+    const radius = props.radius
+    const radius__items = radius.map((radiusItem, key) => {
         return (
-            <div className="radius__item" key={key}>
-                <div className="radius__sample" 
-                    style={styles}></div>
-                <h5 className="radius__unit">{radiusItem.label}</h5>
-            </div>
-        )
+            <RadiusItem 
+                key={key}
+                styles={radiusItem.styles}
+                label={radiusItem.label}
+            />
+        );
     })
     return (
         <div className="radius__collection">
-            {radiusItems}
+            {radius__items}
         </div>
     )
 }
