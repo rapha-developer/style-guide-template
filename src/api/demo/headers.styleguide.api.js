@@ -6,4 +6,8 @@ export default {
     headlines: {
         rules: "typography rules"
     },
+    featuresTopics: {
+        spacing: "spacing scale",
+        radius: "border radius scale"
+    }
 }
