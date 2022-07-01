@@ -1,0 +1,67 @@
+
+.rules-palette-1 {
+    --topic__rule: primary colors;
+    --clr__rule: #BE52F2;
+    --hsl__rule: 281 86% 64%;
+    --clr__rule: #DBA5F5;
+    --hsl__rule: 281 80% 80%;
+    --clr__rule: #EEDFF2;
+    --hsl__rule: 287 42% 91%;
+}
+.rules-palette-2 {
+    --topic__rule: accent colors;
+    --clr__rule: #6979F8;
+    --hsl__rule: 233 91% 69%;
+    --clr__rule: #A5AFFB;
+    --hsl__rule: 233 91% 82%;
+    --clr__rule: #E5E7FA;
+    --hsl__rule: 234 68% 94%;
+}
+.rules-palette-3 {
+    --topic__rule: semantic colors;
+    --clr__rule: #FFCF5C;
+    --hsl__rule: 42 100% 68%;
+    --clr__rule: #FFE29D;
+    --hsl__rule: 42 100% 81%;
+    --clr__rule: #FFF8E7;
+    --hsl__rule: 42 100% 95%;
+    --clr__rule: #FFA26B;
+    --hsl__rule: 22 100% 71%;
+    --clr__rule: #FFC7A6;
+    --hsl__rule: 22 100% 83%;
+    --clr__rule: #FFE8DA;
+    --hsl__rule: 23 100% 93%;
+    --clr__rule: #0084F4;
+    --hsl__rule: 208 100% 48%;
+    --clr__rule: #66B5F8;
+    --hsl__rule: 208 91% 69%;
+    --clr__rule: #D5E9FA;
+    --hsl__rule: 208 79% 91%;
+    --clr__rule: #00C48C;
+    --hsl__rule: 163 100% 38%;
+    --clr__rule: #7DDFC3;
+    --hsl__rule: 163 60% 68%;
+    --clr__rule: #D5F2EA;
+    --hsl__rule: 163 53% 89%;
+    --clr__rule: #FF647C;
+    --hsl__rule: 351 100% 70%;
+    --clr__rule: #FDAFBB;
+    --hsl__rule: 351 95% 84%;
+    --clr__rule: #FBE4E8;
+    --hsl__rule: 350 74% 94%;
+}
+.rules-palette-4 {
+    --topic__rule: neutral colors;
+    --clr__rule: #1A051D;
+    --hsl__rule: 293 71% 7%;
+    --clr__rule: #3F3356;
+    --hsl__rule: 261 26% 27%;
+    --clr__rule: #D0C9D6;
+    --hsl__rule: 272 14% 81%;
+    --clr__rule: #ECE9F1;
+    --hsl__rule: 263 22% 93%;
+    --clr__rule: #F7F5F9;
+    --hsl__rule: 270 25% 97%;
+    --clr__rule: #FFFFFF;
+    --hsl__rule: 0 0% 100%;
+}

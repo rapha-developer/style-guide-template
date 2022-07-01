@@ -1,0 +1,25 @@
+
+.rules-radius-1 {
+    --fc__rule: extraSmall;
+    --bd__rule: 4px;
+}
+.rules-radius-2 {
+    --fc__rule: small;
+    --bd__rule: 8px;
+}
+.rules-radius-3 {
+    --fc__rule: regular;
+    --bd__rule: 12px;
+}
+.rules-radius-4 {
+    --fc__rule: normal;
+    --bd__rule: 16px;
+}
+.rules-radius-5 {
+    --fc__rule: lightLarge;
+    --bd__rule: 24px;
+}
+.rules-radius-6 {
+    --fc__rule: circle;
+    --bd__rule: 50%;
+}
