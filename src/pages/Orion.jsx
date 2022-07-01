@@ -1,32 +1,28 @@
-import prefaceApi from '../api/orion/preface.styleguide.api'
-import headersApi from '../api/demo/headers.styleguide.api'
-import typographyApi from '../api/orion/typography.styleguide.api'
-import palettesApi from '../api/orion/palettes.styleguide.api'
+import headersConfig from '../docs/utils/headers.styleguide'
+import MakePreface from '../docs/utils/preface.styleguide'
 
-import featuresApi from '../api/demo/features.styleguide.api'
-import rulesApi from '../api/demo/rules.styleguide.api'
-
-import rulesCSS from '../css/demo/rules.css'
-import paletteCSS from '../css/demo/palette.css'
-import typographyCSS from '../css/demo/typography.css'
-import fontsCSS from '../css/demo/fonts.css'
-import spacingCSS from '../css/demo/spacing.css'
-import radiusCSS from '../css/demo/radius.css'
+import paletteCSS from '../docs/themes/demo/palette.css'
+import fontsCSS from '../docs/themes/demo/fonts.css'
+import typeScaleCSS from '../docs/themes/demo/typeScale.css'
+import rulesCSS from '../docs/themes/demo/rules.css'
+import spacingCSS from '../docs/themes/demo/spacing.css'
+import radiusCSS from '../docs/themes/demo/radius.css'
 
 import Styleguide from './Styleguide'
 
+
 function Orion() {
+    const prefaceAttributes = MakePreface("orion")
     return (
         <Styleguide
-            preface={prefaceApi}
-            headers={headersApi}
+            preface={prefaceAttributes}
+            headers={headersConfig}
             palettes={paletteCSS}
             fonts={fontsCSS}
-            typeScale={typographyCSS}
+            typeScale={typeScaleCSS}
             rules={rulesCSS}
             spacing={spacingCSS}
             radius={radiusCSS}
-            features={featuresApi}
         />
     )
 }

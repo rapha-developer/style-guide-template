@@ -4,7 +4,7 @@ import FeaturesContainer from "../molecules/FeaturesContainer"
 import PaletteContainer from "../molecules/PaletteContainer"
 import TypographyContainer from "../molecules/TypographyContainer"
 import RulesContainer from "../molecules/RulesContainer"
-import weights from '../api/demo/weights.styleguide.api'
+import weights from '../docs/utils/weights.styleguide'
 
 import '../css/fonts/demo.fonts.css'
 
@@ -32,10 +32,6 @@ function Styleguide(props) {
             />
 
             {props.headers.spacing && <Header title={props.headers.spacing} /> }
-            {/* <FeaturesContainer 
-                spaces={props.features.spacing}
-                radius={props.features.borderRadius}
-            /> */}
             <FeaturesContainer 
                 topics={props.headers.featuresTopics}
                 styleguideSpaces={props.spacing}

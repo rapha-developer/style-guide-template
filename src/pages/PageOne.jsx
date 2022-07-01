@@ -1,30 +1,26 @@
-import prefaceApi from '../api/demo/preface.styleguide.api'
-import headersApi from '../api/demo/headers.styleguide.api'
-import palettesApi from '../api/demo/palettes.styleguide.api'
-import typographyApi from "../api/demo/typography.styleguide.api"
-import featuresApi from "../api/demo/features.styleguide.api"
-import rulesApi from "../api/demo/rules.styleguide.api"
+import headersConfig from '../docs/utils/headers.styleguide'
+import MakePreface from '../docs/utils/preface.styleguide'
+
+import paletteCSS from '../docs/themes/demo/palette.css'
+import fontsCSS from '../docs/themes/demo/fonts.css'
+import typeScaleCSS from '../docs/themes/demo/typeScale.css'
+import rulesCSS from '../docs/themes/demo/rules.css'
+import spacingCSS from '../docs/themes/demo/spacing.css'
+import radiusCSS from '../docs/themes/demo/radius.css'
 
 import Styleguide from '../pages/Styleguide'
 
-import rulesCSS from '../css/demo/rules.css'
-import paletteCSS from '../css/demo/palette.css'
-import typographyCSS from '../css/demo/typography.css'
-import fontsCSS from '../css/demo/fonts.css'
-import spacingCSS from '../css/demo/spacing.css'
-import radiusCSS from '../css/demo/radius.css'
-
 function PageOne() {
+    const prefaceAttributes = MakePreface()
     return (
-        <Styleguide preface={prefaceApi} 
-            headers={headersApi} 
+        <Styleguide preface={prefaceAttributes} 
+            headers={headersConfig} 
             palettes={paletteCSS}
-            typeScale={typographyCSS}
             fonts={fontsCSS}
-            features={featuresApi}
+            typeScale={typeScaleCSS}
+            rules={rulesCSS}
             spacing={spacingCSS}
             radius={radiusCSS}
-            rules={rulesCSS}
         />
     )
 }

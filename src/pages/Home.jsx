@@ -2,19 +2,18 @@ import { Link } from "react-router-dom"
 import Header from "../components/Header"
 import Preface from "../components/Preface"
 
+import MakePreface from "../docs/utils/preface.styleguide"
+
 function Home() {
-    const informationToHome = {
-        subtitle: "maker",
-        title: "home",
-        header__title: "components"
-    }
+    const prefaceAttributes = MakePreface('', "home")
+
     return (
         <div className="home">
             <Preface
-                subtitle={informationToHome.subtitle}
-                title={informationToHome.title}
+                subtitle={prefaceAttributes.subtitle}
+                title={prefaceAttributes.title}
             />
-            <Header title={informationToHome.header__title} />
+            <Header title="components" />
             <Link to="/styleguide">Styleguide Link</Link>
             <br />
             <br />
