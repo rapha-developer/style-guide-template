@@ -52,7 +52,8 @@ function FormattingDataToAccordions(props) {
                 return weightItem
             }
         });
-        const letterTitle = `letter: ${letterSpacing}`
+        const messageDefaultToLetter = 'letter: base';
+        const letterTitle = (letterSpacing) ? `letter: ${letterSpacing}` : messageDefaultToLetter;
         const fragments = [elementName, fontFamily, foundWeight.label, fontSize, letterTitle];
         return fragments.join(' - ')
     }
