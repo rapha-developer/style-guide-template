@@ -1,0 +1,41 @@
+
+.rules-h1 {
+    --fc__rule: Heading One;
+    --fs__rule: 3rem;
+    --var__rule: --scale--h1;
+}
+.rules-h2 {
+    --fc__rule: Heading Two;
+    --fs__rule: 2.5rem;
+    --var__rule: --scale--h2;
+}
+.rules-h3 {
+    --fc__rule: Heading Three;
+    --fs__rule: 2.25rem;
+    --var__rule: --scale--h3;
+}
+.rules-h4 {
+    --fc__rule: Heading Four;
+    --fs__rule: 1.875rem;
+    --var__rule: --scale--h4;
+}
+.rules-h5 {
+    --fc__rule: Heading Five;
+    --fs__rule: 1.5rem;
+    --var__rule: --scale--h5;
+}
+.rules-h6 {
+    --fc__rule: Heading Six;
+    --fs__rule: 0.875rem;
+    --var__rule: --scale--h6;
+}
+.rules-p1 {
+    --fc__rule: Paragraph One;
+    --fs__rule: 1.125rem;
+    --var__rule: --scale--p1;
+}
+.rules-p2 {
+    --fc__rule: Paragraph Two;
+    --fs__rule: 1rem;
+    --var__rule: --scale--p2;
+}
