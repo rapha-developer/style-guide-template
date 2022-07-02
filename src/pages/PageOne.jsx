@@ -10,6 +10,8 @@ import radiusCSS from '../docs/themes/demo/radius.css'
 
 import Styleguide from '../pages/Styleguide'
 
+import '../css/fonts/demo.fonts.css'
+
 function PageOne() {
     const prefaceAttributes = MakePreface()
     return (

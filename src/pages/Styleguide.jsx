@@ -6,9 +6,6 @@ import TypographyContainer from "../molecules/TypographyContainer"
 import RulesContainer from "../molecules/RulesContainer"
 import weights from '../docs/utils/weights.styleguide'
 
-import '../css/fonts/demo.fonts.css'
-
-
 function Styleguide(props) {
     return (
         <div className="styleguide">
