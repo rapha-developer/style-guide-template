@@ -1,18 +1,5 @@
 @import url("css/reset.css");
-
-.container {
-    max-width: 1200px;
-    padding-inline: 2rem;
-    margin-inline: auto;
-}
-
-.capitalize {
-    text-transform: capitalize;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
+@import url("css/base.css");
 
 :root {
     --bg__active--100: 225 100% 96%;  /* #EBF0FF; */

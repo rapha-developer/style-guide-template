@@ -1,0 +1,13 @@
+.container {
+    max-width: 1200px;
+    padding-inline: 2rem;
+    margin-inline: auto;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
