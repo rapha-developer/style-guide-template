@@ -1,15 +1,10 @@
-import ExtractClassAndPropertiesFromCSS from "../components/Helpers/ExtractClassAndPropertiesFromCSS";
+import PalettesCollection from "../components/Colors/PalettesCollection"
 
 function PaletteContainer(props) {
-    const componentController = "palette"
-
     return (
         <section className="section__colors">
-            <ExtractClassAndPropertiesFromCSS
-                styleguide={props.styleguide}
-                component={componentController}
-            />
+            <PalettesCollection palettes={props.palettes} />
         </section>
-    );
+    )
 }
 export default PaletteContainer
