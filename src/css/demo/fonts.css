@@ -1,9 +1,6 @@
-
-.rules-fonts-1 {
-    --var__rule: --ff__poppins;
-    --ff__rule: Poppins;
+.Poppins {
+    font-family: --ff__poppins;
 }
-.rules-fonts-2 {
-    --var__rule: --ff__montserrat;
-    --ff__rule: Montserrat;
+.Montserrat {
+    font-family: --ff__montserrat;
 }
