@@ -7,19 +7,19 @@ function WeightsTimeline(props) {
         const firstItem = 0;
         const lastItem = dataTimeline.data.length - 1;
 
-        const removeBgInFirst = (firstItem === key ) ? "progress__line--transparent" : ""; 
-        const removeBgInLast = (lastItem === key ) ? "progress__line--transparent" : ""; 
+        const removeBgInFirst = (firstItem === key ) ? "timeline__line--transparent" : ""; 
+        const removeBgInLast = (lastItem === key ) ? "timeline__line--transparent" : ""; 
         const styles = {}
         styles[dataTimeline.property] = progressItem.unit
         return (
-            <div className="progress__item" key={key}>
-                <span className="progress__unit">{progressItem.unit}</span>
-                <h6 className="progress__label capitalize"
+            <div className="timeline__item" key={key}>
+                <span className="timeline__unit">{progressItem.unit}</span>
+                <h6 className="timeline__label capitalize"
                     style={styles}>{progressItem.label}</h6>
-                <div className="progress__bar">
-                    <span className={`progress__line ${removeBgInFirst}`}></span>
-                    <div className="progress__dot"></div>
-                    <span className={`progress__line ${removeBgInLast}`}></span>
+                <div className="timeline__bar">
+                    <span className={`timeline__line ${removeBgInFirst}`}></span>
+                    <div className="timeline__dot"></div>
+                    <span className={`timeline__line ${removeBgInLast}`}></span>
                 </div>
             </div>
         )

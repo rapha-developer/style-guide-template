@@ -404,7 +404,7 @@ body {
     grid-row-gap: var(--gap);
 }
 
-.progress__item {
+.timeline__item {
     --width: fit-content;
     --height: auto;
     --gap: 20px;
@@ -414,7 +414,7 @@ body {
     grid-gap: var(--gap);
 }
 
-.progress__item span {
+.timeline__item span {
     --margin-b: -10px;
     font-family: var(--ff__poppins, sans-serif);
     font-size: var(--fs__heading--body);
@@ -423,20 +423,20 @@ body {
     margin-bottom: var(--margin-b);
 }
 
-.progress__label {
+.timeline__label {
     font-family: var(--ff__montserrat, sans-serif);
     font-weight: var(--fw__medium);
     font-size:  var(--fs__heading--h6);
     text-align: center;
 }
 
-.progress__bar {
+.timeline__bar {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.progress__line {
+.timeline__line {
     --width: 70px;
     --height: 8px;
     display: block;
@@ -447,7 +447,7 @@ body {
     background-color: hsl(var(--clr__accent--300));
 }
 
-.progress__line--transparent {
+.timeline__line--transparent {
     background: transparent
 }
 
@@ -456,12 +456,12 @@ body {
         justify-content: center;
     }
 
-    .progress__line--transparent {
+    .timeline__line--transparent {
         background-color: hsl(var(--clr__accent--300));
     }
 }
 
-.progress__dot {
+.timeline__dot {
     --width: 30px;
     --height: 30px;
     --margin-i: -2px;
@@ -473,7 +473,7 @@ body {
     position: relative;
 }
 
-.progress__dot::after {
+.timeline__dot::after {
     --top: 8px;
     --left: 8px;
     --width: 14px;
