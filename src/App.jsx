@@ -1,27 +1,16 @@
 import { useState } from 'react'
-import { Routes, Route, Link } from "react-router-dom";
-
-import logo from './logo.svg'
-
+import reactLogo from './assets/react.svg'
 import './App.css'
 
-import Home from "./pages/Home"
-import PageOne from './pages/PageOne';
-import Orion from './pages/Orion'
+import Page from './pages/Page'
 
 function App() {
-
+  const [count, setCount] = useState(0)
   return (
     <div className="App">
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/orion' element={<Orion />} />
-        <Route path='/styleguide' element={<PageOne />} />
-      </Routes>
-
+      <Page />
     </div>
   )
 }
-
 
 export default App
