@@ -86,7 +86,7 @@ body {
     padding-block: var(--spc__scale--4);
 }
 .section__spacing {
-    padding-block: var(--spc__scale--2);
+    padding-block: var(--spc__scale--4);
 }
 .section__colors {
     padding-block: var(--spc__scale--4) var(--spc__scale--7);
