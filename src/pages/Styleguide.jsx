@@ -46,6 +46,7 @@ function Styleguide(props) {
 
             {props.headers.spacing && <Header title={props.headers.spacing} /> }
             <FeaturesContainer 
+                topics={props.headers.featuresTopics}
                 radius={formattingRadius.radius}
                 spaces={formattingSpaces.spacing}
             />
