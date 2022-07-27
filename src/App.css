@@ -79,14 +79,14 @@ body {
 }
 
 .section__typography {
-    padding-block: var(--spc__scale--2);
+    padding-block: var(--spc__scale--2) var(--spc__scale--4);
     background: hsl(var(--clr__neutral--100));
 }
 .section__rules { 
     padding-block: var(--spc__scale--4);
 }
 .section__spacing {
-    padding-block: var(--spc__scale--4);
+    padding-block: var(--spc__scale--2);
 }
 .section__colors {
     padding-block: var(--spc__scale--4) var(--spc__scale--7);
