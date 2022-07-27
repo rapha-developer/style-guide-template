@@ -2,13 +2,13 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
-import Page from './pages/Page'
+import PageDemo from './pages/PageDemo'
 
 function App() {
   const [count, setCount] = useState(0)
   return (
     <div className="App">
-      <Page />
+      <PageDemo />
     </div>
   )
 }

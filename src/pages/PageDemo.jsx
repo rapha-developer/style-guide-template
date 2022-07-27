@@ -11,7 +11,7 @@ import Styleguide from './Styleguide'
 
 import '../css/fonts/demo.fonts.css'
 
-function Page(props) {
+function PageDemo(props) {
     const prefaceAttributes = MakePreface()
 
     return (
@@ -27,4 +27,4 @@ function Page(props) {
     )
 }
 
-export default Page
+export default PageDemo
