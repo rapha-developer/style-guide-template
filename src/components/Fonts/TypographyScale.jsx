@@ -34,14 +34,15 @@ function TypographyScale(props) {
     }
     const tabsFromMenu = tabs.map((tabItem, key) => {
         return (
-            <button className={`verticalTab__link ${isActive(tabItem.name)}`}
+            <button className={`verticalTab__link capitalize ${isActive(tabItem.name)}`}
                 onClick={() => changeTab(tabItem.name)} key={key}>{tabItem.name}</button>
         )
     });
     const contentFromTabs = tabItems.map((tabItem, key) => {
         return (
             <div className="verticalTab__item" data-visible={tabItem.visible} key={key}>
-                <h3 className="verticalTab__title" style={tabItem.styles}>{tabItem.name}</h3>
+                <h3 className="verticalTab__title capitalize" 
+                    style={tabItem.styles}>{tabItem.name}</h3>
                 <p className="verticalTab__description">{tabItem.description} <span>{tabItem.variable}</span></p>
             </div>
         );
